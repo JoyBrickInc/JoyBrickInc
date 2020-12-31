@@ -1,0 +1,28 @@
+body {
+  background-color: #343a40;
+}
+
+.link-button li {
+  color: #a7afb8;
+  font-size: 16px;
+}
+
+.link-button a {color: #a7afb8;}
+.link-button a.link {color: #a7afb8;}
+.link-button a:visited {color:#a7afb8;}
+.link-button a:hover{color:#FFF;}
+
+.text-split {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+footer > .copyright {
+  font-size: 12px;
+  color: #a7afb8;
+}
+
+.list-inline-item a {color: #a7afb8;}
+.list-inline-item a.link {color: #a7afb8;}
+.list-inline-item a:visited {color:#a7afb8;}
+.list-inline-item a:hover{color:#FFF;}

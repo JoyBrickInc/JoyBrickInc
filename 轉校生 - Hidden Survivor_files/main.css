@@ -1,0 +1,67 @@
+.body-fonts {
+    font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'LiHei Pro Medium', 'PMingLiU', Arial, sans-serif, monospace;
+}
+
+.logos {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-bottom: 20px;
+}
+
+footer > .copyright {
+    font-size: 12px;
+}
+
+.social-links {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.social-links > .social {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 0 5px;
+}
+
+.social-links > .social > a > img {
+    height: 100%;
+}
+
+.notice {
+  color: red;
+}
+
+.notice > a {
+  color: red;
+  text-decoration:underline;
+}
+
+.point-msg {
+  display: inline-block;
+  color: red;
+  font-size: 14px;
+}
+
+.link-button {
+  text-align: center;
+  width: 100%;
+  height: 10px;
+}
+
+.link-button ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.link-button li {
+  display: inline;
+  /* color: #a7afb8; */
+  /* font-size: 16px; */
+  /* float: left; */
+  /* width: 80px; */
+}
