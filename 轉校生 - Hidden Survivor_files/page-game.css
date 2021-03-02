@@ -1,0 +1,72 @@
+:root{
+    --page-content-width: 60%;
+}
+.banner-game{
+    background-image: url(/轉校生\ -\ Hidden\ Survivor_files/home-banner.jpg);
+}
+.main-container{
+    width: var(--page-content-width);
+    font-display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto;
+    text-align: left;
+}
+.main-video-container{
+    width: 50%;
+}
+.main-lightbox-list{
+    margin: 20px 0;
+    padding: 0;
+}
+.thumb{
+    width: 64px;
+    height: 64px;
+
+}
+.lightbox{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 3;
+    cursor: auto;
+}
+.lightbox:target{
+    opacity: 1;
+    transition: 0.4s ease-in-out;
+    pointer-events: auto;
+}
+.pic{
+    box-shadow: 4px 3px 16px 1px rgba(0,0,0,0.5);
+}
+
+.main-link-list{
+    margin: 20px 0;
+    padding: 0;
+}
+.main-link-item{
+    list-style: none;
+    display: inline-block;
+    transition: 0.3 ease-in-out;
+}
+.main-link-item img{
+    height: 40px; 
+}
+.main-link-item:hover{
+    opacity: 0.7;
+}
+
+
+@media(max-width:1024px){
+    .main-video-container{
+        width: 100%;
+    }
+}

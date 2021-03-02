@@ -1,0 +1,255 @@
+:root{
+    --center-column-width: 80%;
+    --game-card-size: 400px;
+    --footer-block-width: 240px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+}
+body{
+    width: 100%;
+    background: #f3f3f3;
+    font-family: 'noto sans', sans-serif;
+    text-align: center;
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+#title-logo {
+    position: absolute;
+    left: 70px;
+}
+#title-logo img{
+    height: 50px;
+    margin-top: 5px;
+}
+
+/* header list */
+.header-list{
+    height: 100%;
+    position: absolute;
+    left: 400px;
+    text-align: left;    
+}
+.header-list-item{
+    margin: 0 20px;
+    list-style: none;
+}
+.header-list a{
+    color:rgb(99, 99, 99);
+    line-height: 60px;
+    text-decoration: none;
+}
+.header-list a:hover{
+    color:rgb(160, 160, 160)
+}
+
+/* hidden-header */
+.hidden-header{
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid rgb(201, 201, 201);
+    background-color: white;
+    position: fixed;
+    top: 60px;
+    z-index: 2;
+    display: none;
+}
+.hidden-header img{
+    height: 46px;
+    margin-top: 7px;
+}
+
+/* banner */
+.banner{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(201, 201, 201);
+    margin-top: 60px;
+    background-image: url(/轉校生\ -\ Hidden\ Survivor_files/home-banner.jpg);
+    background-size: auto 400px;
+}
+
+/* 標題字 */
+.title-text{
+    margin: 60px auto 0 auto;
+    font-size: 42px;
+    font-weight: bold;
+    color: rgb(49, 49, 49);
+}
+
+/* games */
+.games{
+    width: var(--center-column-width);
+    margin: 0 auto;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.games-card{
+    width: var(--game-card-size);
+    height: var(--game-card-size);
+    margin: 20px;
+    position: relative;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+.games-card > img{
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+.games-card:hover > img{
+    transform: scale(1.2 , 1.2);
+    filter: brightness(0.5);
+}
+.games-card-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+.games-card-text img{
+    width: 160px;
+}
+
+/* news */
+.news{
+    width: var(--center-column-width);
+    margin: 0 auto;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.news-card{
+    width: 400px;
+    height: 500px;
+    margin: 20px;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+.news-card-img-container{
+    overflow: hidden;
+    width: 100%;
+    height: 60%;
+}
+.news-card img{
+    transition: 0.2s ease-in-out;
+}
+.news-card:hover img{
+    transform: scale(1.1 , 1.1);
+    filter: opacity(0.8);
+}
+.news-card-text-container{
+    padding: 20px;
+    color: rgb(49, 49, 49);
+    text-align: left;
+}
+.text-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+/* footer */
+footer{
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: white;
+}
+
+/* footer list */
+.footer-list{
+    width: var(--footer-block-width);
+    padding: 0;
+    text-align: left;
+}
+.footer-list li{
+    list-style: none;
+    margin: 5px 0;
+}
+.footer-list a{
+    color:rgb(99, 99, 99);
+    text-decoration: none;
+}
+.footer-list a:visited{
+    color: rgb(99, 99, 99);
+}
+.footer-list a:hover{
+    color: rgb(160, 160, 160);
+}
+
+/* footer links */
+.footer-links{
+    width: var(--footer-block-width);
+    text-align: left;
+}
+.footer-links img{
+    margin: 10px 5px;
+    width: 20px;
+    height: 20px;
+}
+.footer-links img:hover{
+    filter: opacity(0.7);
+}
+.copyright{
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    margin: 10px 0; 
+}
+
+/* media query */
+@media(max-width:1024px){
+    :root{
+        --center-column-width: 95%;
+        --game-card-size: 300px;
+        --footer-block-width: 160px;
+    }
+    .games-card{
+        margin: 10px;
+    }
+    .news-card{
+        width: 300px;
+        height: 400px;
+    }
+    .news-card-text-container{
+    padding-top: 10px;
+    }
+    #title-logo {
+        position: relative;
+        left: 0;
+    }
+    .hidden-header{
+        display: block;
+    }
+    .banner{
+        margin-top: 120px;
+    }
+}
