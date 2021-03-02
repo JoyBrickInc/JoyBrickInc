@@ -1,5 +1,5 @@
 :root{
-    --center-column-width: 80%;
+    --center-column-width: 70%;
     --game-card-size: 400px;
     --footer-block-width: 240px;
 }
@@ -44,6 +44,7 @@ header{
 .header-list-item{
     margin: 0 20px;
     list-style: none;
+    display: inline-block;
 }
 .header-list a{
     color:rgb(99, 99, 99);
@@ -58,7 +59,7 @@ header{
 .hidden-header{
     width: 100%;
     height: 60px;
-    border-top: 1px solid rgb(201, 201, 201);
+    border-top: 1px dotted rgb(201, 201, 201);
     background-color: white;
     position: fixed;
     top: 60px;
@@ -76,8 +77,9 @@ header{
     height: 400px;
     background-color: rgb(201, 201, 201);
     margin-top: 60px;
-    background-image: url(/轉校生\ -\ Hidden\ Survivor_files/home-banner.jpg);
-    background-size: auto 400px;
+    background-image: url(/轉校生\ -\ Hidden\ Survivor_files/banner-classroom2.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 /* 標題字 */
@@ -147,6 +149,7 @@ header{
     background-color: white;
     transition: 0.3s ease-in-out;
     text-decoration: none;
+    overflow: hidden;
 }
 .news-card-img-container{
     overflow: hidden;
@@ -165,10 +168,17 @@ header{
     color: rgb(49, 49, 49);
     text-align: left;
 }
+.text-date{
+    color:rgb(100, 100, 100);
+    font-size: 12px;
+}
 .text-title{
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+.text-tag{
+    color: rgb(100, 100, 100);
 }
 
 
@@ -231,6 +241,15 @@ footer{
         --center-column-width: 95%;
         --game-card-size: 300px;
         --footer-block-width: 160px;
+    }
+    .header-list-item{
+        display: none;
+    }
+    .banner{
+        height: 300px;
+    }
+    .games{
+        justify-content: center;
     }
     .games-card{
         margin: 10px;

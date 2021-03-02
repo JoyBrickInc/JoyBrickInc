@@ -1,8 +1,8 @@
 :root{
     --page-content-width: 60%;
 }
-.banner-game{
-    background-image: url(/轉校生\ -\ Hidden\ Survivor_files/home-banner.jpg);
+.banner-hs{
+    background-image: url(/轉校生\ -\ Hidden\ Survivor_files/banner-hs.jpg);
 }
 .main-container{
     width: var(--page-content-width);
@@ -12,14 +12,17 @@
     margin: 60px auto;
     text-align: left;
 }
-.main-video-container{
+.main-media-container{
     width: 50%;
+}
+.main-media-container img{
+    width: 100%;
 }
 .main-lightbox-list{
     margin: 20px 0;
     padding: 0;
 }
-.thumb{
+.lightbox-thumb{
     width: 64px;
     height: 64px;
 
@@ -41,15 +44,15 @@
 }
 .lightbox:target{
     opacity: 1;
-    transition: 0.4s ease-in-out;
+    transition: 0.3s ease-in-out;
     pointer-events: auto;
 }
-.pic{
+.lightbox-img{
     box-shadow: 4px 3px 16px 1px rgba(0,0,0,0.5);
 }
 
 .main-link-list{
-    margin: 20px 0;
+    margin: 0;
     padding: 0;
 }
 .main-link-item{
@@ -66,7 +69,10 @@
 
 
 @media(max-width:1024px){
-    .main-video-container{
+    :root{
+        --page-content-width: 80%;
+    }
+    .main-media-container{
         width: 100%;
     }
 }
