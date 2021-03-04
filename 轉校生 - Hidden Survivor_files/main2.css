@@ -59,11 +59,12 @@ header{
 .hidden-header{
     width: 100%;
     height: 60px;
+    margin-top: 60px;
     border-top: 1px dotted rgb(201, 201, 201);
     background-color: white;
-    position: fixed;
-    top: 60px;
-    z-index: 2;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     display: none;
 }
 .hidden-header img{
@@ -150,6 +151,7 @@ header{
     transition: 0.3s ease-in-out;
     text-decoration: none;
     overflow: hidden;
+    position: relative;
 }
 .news-card-img-container{
     overflow: hidden;
@@ -179,6 +181,13 @@ header{
 }
 .text-tag{
     color: rgb(100, 100, 100);
+}
+.news-card-cover{
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(rgba(255, 255, 255, 0),rgba(255,255,255,1),rgba(255,255,255,1));
+    position: absolute;
+    bottom: 0;
 }
 
 
@@ -247,6 +256,7 @@ footer{
     }
     .banner{
         height: 300px;
+        margin-top: 0;
     }
     .games{
         justify-content: center;
@@ -268,7 +278,9 @@ footer{
     .hidden-header{
         display: block;
     }
+}
+@media(max-width: 900px){
     .banner{
-        margin-top: 120px;
+        height: 200px;
     }
 }

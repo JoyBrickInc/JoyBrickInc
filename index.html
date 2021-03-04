@@ -71,6 +71,7 @@
             為了慶祝《轉校生 Hidden Survivor》台灣上市兩周年
             豐富好禮送給大家🎁🎁🎁....</p>
         </div>
+        <div class="news-card-cover"></div>
       </a>
     </div>
 
@@ -107,7 +108,7 @@
       </ul>
 
       <div class="footer-links">
-        <a href="https://www.facebook.com/JoyBrick.Inc"target="blank"><img src="/轉校生 - Hidden Survivor_files/facebook.png"></a>
+        <a href="https://www.facebook.com/JoyBrick.Inc"><img src="/轉校生 - Hidden Survivor_files/facebook.png"></a>
         <!-- <a href=""><img src="/轉校生 - Hidden Survivor_files/instagram.png"></a>
         <a href=""><img src="/轉校生 - Hidden Survivor_files/twitter.png"></a> -->
         <a href="https://www.youtube.com/channel/UCQkgbvBGYL665OksQu9K0ug"target="blank"><img src="/轉校生 - Hidden Survivor_files/youtube.png"></a>
@@ -132,7 +133,8 @@
   <!-- 視差滾動外掛 -->
   <!-- 來源：http://rettamkrad.blogspot.com/2013/05/blog-post.html -->
   <script>
-    $('#banner').parallax({offsetY:-125,speedFactor:-0.3}); 
+    // 在小畫面的時候停用視差滾動外掛
+    screen.width > 1024 ? $('#banner').parallax({offsetY:-125,speedFactor:-0.3}) : ''; 
   </script>
 
     
